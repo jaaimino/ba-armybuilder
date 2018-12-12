@@ -1,38 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import AppRouter from 'router';
-import TemporaryDrawer from 'components/drawer.js';
-import AppBar from 'components/app-bar.js';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from 'components/Home';
+import ExampleComponent from 'components/ExampleComponent';
+import PageNotFound from 'components/PageNotFound';
+import Breadcrumbs from 'components/Breadcrumbs';
+import s from 'styles/app.style';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      drawerOpen: false
-    };
-  }
+export default function App() {
+  return (
+    <div style={s.root}>
+      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
+      <nav style={s.breadcrumbs}>
+        <Breadcrumbs />
+      </nav>
 
-  render() {
-    return (
-      <React.Fragment>
-        <CssBaseline />
-        <AppBar
-          open={this.state.drawerOpen}
-          onOpenSidebar={() => {
-            this.setState({drawerOpen: true})
-          }}
-        />
-        <TemporaryDrawer
-          open={this.state.drawerOpen}
-          onClose={() => {
-            this.setState({drawerOpen: false})
-          }}
-        />
-        <AppRouter />
-      </React.Fragment>
-    );
-  }
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/example" component={ExampleComponent} />
+        <Route component={PageNotFound} />
+      </Switch>
+    </div>
+  );
 }
-
-export default App;
