@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Link } from 'react-router-dom';
-import s from '../styles/style';
+import s from 'styles/style';
 
 const breadCrumbTitles = {
   '': 'Home',
@@ -18,9 +18,7 @@ function BreadcrumbsItem({ match }) {
       <Link
         {...s.link}
         to={to}
-      >
-        {title || 'Page Not Found'}
-      </Link>
+      >{title || 'Page Not Found'}</Link>
       {!match.isExact && title && ' / '}
       {title &&
         <Route path={`${match.url === '/' ? '' : match.url}/:path`} component={BreadcrumbsItem} />
