@@ -18,6 +18,7 @@ class App extends Component {
       <React.Fragment>
         <CssBaseline />
         <AppBar
+          open={this.state.drawerOpen}
           onOpenSidebar={() => {
             this.setState({drawerOpen: true})
           }}
