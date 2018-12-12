@@ -6,8 +6,8 @@ import Test from 'routes/test';
 const AppRouter = () => (
   <Router>
     <Switch>
-        <Route path="/ba-armybuilder" exact component={Index} />
-        <Route path="/ba-armybuilder/test" exact component={Test} />
+        <Route path={process.env.PUBLIC_URL + "/"} exact component={Index} />
+        <Route path={process.env.PUBLIC_URL + "/test"} exact component={Test} />
     </Switch>
   </Router>
 );
