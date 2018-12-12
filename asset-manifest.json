@@ -1,13 +1,13 @@
 {
-  "main.css": "/ba-armybuilder/static/css/main.35f2b1dd.chunk.css",
-  "main.js": "/ba-armybuilder/static/js/main.57c3a6d7.chunk.js",
-  "main.js.map": "/ba-armybuilder/static/js/main.57c3a6d7.chunk.js.map",
-  "static/js/1.e67855e8.chunk.js": "/ba-armybuilder/static/js/1.e67855e8.chunk.js",
-  "static/js/1.e67855e8.chunk.js.map": "/ba-armybuilder/static/js/1.e67855e8.chunk.js.map",
+  "main.css": "/ba-armybuilder/static/css/main.df53b4d2.chunk.css",
+  "main.js": "/ba-armybuilder/static/js/main.f7a5d75f.chunk.js",
+  "main.js.map": "/ba-armybuilder/static/js/main.f7a5d75f.chunk.js.map",
+  "static/js/1.1b524454.chunk.js": "/ba-armybuilder/static/js/1.1b524454.chunk.js",
+  "static/js/1.1b524454.chunk.js.map": "/ba-armybuilder/static/js/1.1b524454.chunk.js.map",
   "runtime~main.js": "/ba-armybuilder/static/js/runtime~main.e5b183fa.js",
   "runtime~main.js.map": "/ba-armybuilder/static/js/runtime~main.e5b183fa.js.map",
-  "static/css/main.35f2b1dd.chunk.css.map": "/ba-armybuilder/static/css/main.35f2b1dd.chunk.css.map",
+  "static/css/main.df53b4d2.chunk.css.map": "/ba-armybuilder/static/css/main.df53b4d2.chunk.css.map",
   "index.html": "/ba-armybuilder/index.html",
-  "precache-manifest.03646c0bd2d962fb7082c2b1ef342dac.js": "/ba-armybuilder/precache-manifest.03646c0bd2d962fb7082c2b1ef342dac.js",
+  "precache-manifest.c90d2820d6396a869e1f01eb8a1d5abb.js": "/ba-armybuilder/precache-manifest.c90d2820d6396a869e1f01eb8a1d5abb.js",
   "service-worker.js": "/ba-armybuilder/service-worker.js"
 }
