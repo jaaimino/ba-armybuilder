@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ba-armybuilder/static/css/main.df53b4d2.chunk.css"
   },
   {
-    "revision": "13e07d61e17c712f896d19c219052b85",
+    "revision": "ec8442c55e81010de80c543c7912176f",
     "url": "/ba-armybuilder/index.html"
   }
 ];
