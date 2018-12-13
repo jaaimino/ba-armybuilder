@@ -4,6 +4,7 @@
   "homepage": "http://jaaimino.github.io/ba-armybuilder",
   "private": true,
   "dependencies": {
+    "lokijs": "^1.5.5",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",

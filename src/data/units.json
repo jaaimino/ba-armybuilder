@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Grenadiers",
+        "rules": [
+            "faster"
+        ]
+    },
+    {
+        "name": "Murricans",
+        "rules": [
+            "shoot better"
+        ]
+    }
+]
