@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Code } from 'styles/style';
 import s from 'styles/home.style';
 
 export default function Home() {

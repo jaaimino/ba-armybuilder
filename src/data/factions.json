@@ -1,0 +1,14 @@
+{
+    "finland": {
+        "id": "finland",
+        "name": "Finland",
+        "units": [
+            {
+                "name": "Infantry Squad",
+                "rules": [
+                    "faster"
+                ]
+            }
+        ]
+    }
+}

@@ -5,8 +5,8 @@ import s from 'styles/style';
 
 const breadCrumbTitles = {
   '': 'Home',
-  example: 'Example',
-  'two-deep': 'Two Deep',
+  factions: 'Factions',
+  'finland': 'Findland',
 };
 
 function BreadcrumbsItem({ match }) {

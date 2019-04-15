@@ -13,8 +13,8 @@ export default () => (
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav>
-            <LinkContainer to="/example">
-                <NavItem eventKey={1}>Example</NavItem>
+            <LinkContainer to="/factions">
+                <NavItem eventKey={1}>Factions</NavItem>
             </LinkContainer>
             {/* <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                 <MenuItem eventKey={3.1}>Action</MenuItem>

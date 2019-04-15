@@ -1,31 +1,18 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from 'routes/Home';
-import Example from 'routes/Example';
+import Factions from 'routes/Factions';
+import Units from 'routes/Units';
 import PageNotFound from 'routes/PageNotFound';
 import Breadcrumbs from 'components/Breadcrumbs';
 import MainNav from 'components/MainNav';
 import s from 'styles/app.style';
-import loki from 'lokijs';
-import units from 'data/units';
-import rules from 'data/rules';
-
-const db = new loki('sandbox.db');
-export const LokiContext = React.createContext();
-
-// Make our collections
-const collections = {};
-collections.units = db.addCollection('units');
-collections.rules = db.addCollection('rules');
-
-// Populate with JSON seeds
-collections.units.insert(units);
-collections.rules.insert(rules);
+import { DataContext, Data } from 'database';
 
 export default function App() {
   return (
     <div style={s.root}>
-      <LokiContext.Provider value={collections}>
+      <DataContext.Provider value={Data}>
         <MainNav />
         <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
         <nav style={s.breadcrumbs}>
@@ -33,10 +20,11 @@ export default function App() {
         </nav>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/example" component={Example} />
+          <Route exact path="/factions" component={Factions} />
+          <Route exact path="/factions/:factionName" component={Units} />
           <Route component={PageNotFound} />
         </Switch>
-      </LokiContext.Provider>
+      </DataContext.Provider>
     </div>
   );
 }
