@@ -1,12 +1,10 @@
 import React from 'react';
 import s from '../styles/exampleComponent.style';
-import { LinkContainer } from 'react-router-bootstrap';
-import { DataContext } from 'database';
+import { Container, Col, Row } from 'reactstrap';
+import { DataContext } from 'datalayer';
+import { NavLink as RRNavLink } from 'react-router-dom';
 
 export default class Factions extends React.Component {
-  // Assign a contextType to read the current theme context.
-  // React will find the closest theme Provider above and use its value.
-  // In this example, the current theme is "dark".
   static contextType = DataContext;
   render() {
     return (
@@ -17,13 +15,15 @@ export default class Factions extends React.Component {
             return (
               <div>
                 <h1>Factions</h1>
-                {data.getFactions().map((faction) => (
-                  <LinkContainer to={`/factions/${faction.id}`}>
-                    <div style={{ background: 'purple' }}>
-                      <h2>{faction.name}</h2>
-                    </div>
-                  </LinkContainer>
-                ))}
+                <Container>
+                  <Row className="justify-content-md-center">
+                    {data.getFactions().map((faction) => (
+                      <Col sm="3" style={{height: '300px', border: '1px solid black', margin: '5px', display: 'flex', alignItems: 'center', justifyContent: 'center'}} tag={RRNavLink} exact to={`/factions/${faction.id}`}>
+                        {faction.name}
+                      </Col>
+                    ))}
+                  </Row>
+                </Container>
               </div>
             );
           }}

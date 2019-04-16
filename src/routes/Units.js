@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../styles/exampleComponent.style';
-import { DataContext } from 'database';
+import { DataContext } from 'datalayer';
 
 export default class Units extends React.Component {
   // Assign a contextType to read the current theme context.

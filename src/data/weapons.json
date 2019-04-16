@@ -1,0 +1,7 @@
+{
+    "rifle": {
+        "name": "Rifle",
+        "range": "24",
+        "shots": 1
+    }
+}

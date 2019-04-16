@@ -2,13 +2,59 @@
     "finland": {
         "id": "finland",
         "name": "Finland",
-        "units": [
-            {
-                "name": "Infantry Squad",
-                "rules": [
-                    "faster"
-                ]
+        "units": {
+            "infantry": {
+                "infantry_squad": {
+                    "name": "Infantry Squad",
+                    "models": {
+                        "rifleman": {
+                            "name": "Infantry w. Rifle",
+                            "count": 7,
+                            "weapon": "rifle"
+                        }
+                    }
+                },
+                "infantry_squad1": {
+                    "name": "Infantry Squad"
+                },
+                "infantry_squad2": {
+                    "name": "Infantry Squad"
+                },
+                "infantry_squad3": {
+                    "name": "Infantry Squad"
+                },
+                "infantry_squad4": {
+                    "name": "Infantry Squad"
+                },
+                "infantry_squad5": {
+                    "name": "Infantry Squad"
+                },
+                "infantry_squad6": {
+                    "name": "Infantry Squad"
+                }
             }
-        ]
+        }
+    },
+    "germany": {
+        "id": "germany",
+        "name": "Germany",
+        "units": {
+            "infantry": {
+                "infantry_squad": {
+                    "name": "Infantry Squad"
+                }
+            }
+        }
+    },
+    "usa": {
+        "id": "usa",
+        "name": "United States",
+        "units": {
+            "infantry": {
+                "infantry_squad": {
+                    "name": "Infantry Squad"
+                }
+            }
+        }
     }
 }

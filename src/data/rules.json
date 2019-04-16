@@ -1,10 +1,8 @@
-[
-    {
-        "name": "faster",
-        "text": "Can go faster"
-    },
-    {
-        "name": "shoot better",
-        "text": "Can shoot better :D"
+{
+    "rifle": {
+        "stats": {
+            "range": 24,
+            "shots": 1
+        }
     }
-]
+}

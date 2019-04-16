@@ -3,11 +3,12 @@ import { Switch, Route } from 'react-router-dom';
 import Home from 'routes/Home';
 import Factions from 'routes/Factions';
 import Units from 'routes/Units';
+import List from 'routes/List';
 import PageNotFound from 'routes/PageNotFound';
-import Breadcrumbs from 'components/Breadcrumbs';
-import MainNav from 'components/MainNav';
+import { Breadcrumbs } from 'components/Breadcrumbs';
+import { MainNav } from 'components/MainNav';
 import s from 'styles/app.style';
-import { DataContext, Data } from 'database';
+import { DataContext, Data } from 'datalayer';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/factions" component={Factions} />
           <Route exact path="/factions/:factionName" component={Units} />
+          <Route exact path="/list/:factionName" component={List} />
           <Route component={PageNotFound} />
         </Switch>
       </DataContext.Provider>
