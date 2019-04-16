@@ -2,21 +2,35 @@ import React from 'react';
 import factions from 'data/factions';
 import rules from 'data/rules';
 import weapons from 'data/weapons';
-import { get } from 'lodash';
+import { get, mapValues } from 'lodash';
 
 export const DataContext = React.createContext();
 
-const getUnitsByType = (faction, type) => (Object.values(factions[faction].units[type]));
+const getUnitsByType = (faction, type) => {
+    if (!faction || !type || !get(factions, `${faction}.units.${type}`))
+        return [];
+    return Object.values(factions[faction].units[type]);
+};
 
-const getWeapon = (name) => (weapons[name] || undefined);
+const getWeapon = (name) => (weapons[name]);
+
+const getRule = (name) => (rules[name])
+
+const getResolvedWeapon = (name) => ({
+    ...weapons[name],
+    rules: get(weapons[name], 'rules', []).map((rule) => getRule(rule))
+});
 
 const getResolvedUnitsByType = (faction, type) => {
+    if (!faction || !type) {
+        return [];
+    }
     const units = getUnitsByType(faction, type);
     return units.map((unit) => ({
         ...unit,
-        models: Object.values(get(unit, 'models', {})).map((model) => ({
+        weapons: mapValues(get(unit, 'weapons', {}), (model) => ({
             ...model,
-            weapon: getWeapon(get(model, 'weapon', ''))
+            stats: getResolvedWeapon(get(model, 'weapon', ''))
         }))
     }));
 };

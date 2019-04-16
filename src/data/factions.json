@@ -6,31 +6,45 @@
             "infantry": {
                 "infantry_squad": {
                     "name": "Infantry Squad",
-                    "models": {
-                        "rifleman": {
-                            "name": "Infantry w. Rifle",
+                    "quality_levels": [ { "name": "Inexperienced", "dmg": 3 }, { "name": "Regular", "dmg": 4 }, { "name": "Veteran", "dmg": 5 } ],
+                    "points": 50,
+                    "img": "https://cdn.shopify.com/s/files/1/0309/8965/products/WGB-FN-02-Finnish-Rifle-Squad-b_1024x1024.jpeg?v=1497515546",
+                    "url": "https://us-store.warlordgames.com/products/finnish-rifle-squad",
+                    "minWeapons": "5",
+                    "maxWeapons": "9",
+                    "weapons": {
+                        "nco_rifle": {
+                            "count": 1,
+                            "max": 1,
+                            "min": 1,
+                            "weapon": "nco_rifle"
+                        },
+                        "rifle": {
                             "count": 7,
                             "weapon": "rifle"
+                        },
+                        "smg": {
+                            "max": 5,
+                            "count": 2,
+                            "weapon": "smg"
+                        }
+                    },
+                    "upgrades": []
+                }
+            },
+            "tanks": {
+                "t34_85": {
+                    "name": "T34-85",
+                    "quality_levels": [ { "name": "Inexperienced", "dmg": 3 }, { "name": "Regular", "dmg": 4 }, { "name": "Veteran", "dmg": 5 } ],
+                    "points": 128,
+                    "img": "https://cdn.shopify.com/s/files/1/0309/8965/products/402014004-T34-85-Soviet-Medium-Tank-03.jpg?v=1526464837",
+                    "url": "https://us-store.warlordgames.com/products/t-34-85-medium-tank-plastic",
+                    "weapons": {
+                        "medium_at_gun": {
+                            "count": 1,
+                            "weapon": "medium_at_gun"
                         }
                     }
-                },
-                "infantry_squad1": {
-                    "name": "Infantry Squad"
-                },
-                "infantry_squad2": {
-                    "name": "Infantry Squad"
-                },
-                "infantry_squad3": {
-                    "name": "Infantry Squad"
-                },
-                "infantry_squad4": {
-                    "name": "Infantry Squad"
-                },
-                "infantry_squad5": {
-                    "name": "Infantry Squad"
-                },
-                "infantry_squad6": {
-                    "name": "Infantry Squad"
                 }
             }
         }

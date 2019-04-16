@@ -1,8 +1,10 @@
 {
-    "rifle": {
-        "stats": {
-            "range": 24,
-            "shots": 1
-        }
+    "assault": {
+        "name": "Assault",
+        "text": "Stuff"
+    },
+    "he_3": {
+        "name": "High Explosive (3\")",
+        "text": "Stuff"
     }
 }

@@ -15,7 +15,7 @@ export default function App() {
     <div style={s.root}>
       <DataContext.Provider value={Data}>
         <MainNav />
-        <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
+        <h1 style={s.title}>Bolt Action List Builder</h1>
         <nav style={s.breadcrumbs}>
           <Breadcrumbs />
         </nav>

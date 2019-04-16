@@ -1,7 +1,29 @@
 {
     "rifle": {
-        "name": "Rifle",
+        "name": "Infantry w. Rifle",
         "range": "24",
         "shots": 1
+    },
+    "nco_rifle": {
+        "name": "NCO w. Rifle",
+        "range": "24",
+        "shots": 1
+    },
+    "smg": {
+        "name": "Infantry w. Submachine Gun",
+        "range": "12",
+        "shots": 2,
+        "rules": [
+            "assault"
+        ]
+    },
+    "medium_at_gun": {
+        "name": "Medium Anti-tank Gun",
+        "range": 48,
+        "shots": 1,
+        "pen": "-5",
+        "rules": [
+            "he_3"
+        ]
     }
 }
